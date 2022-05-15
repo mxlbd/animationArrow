@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #1D2424;
+  font-weight: 400;
+  font-family: "Nunito", serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+.btn {
+  margin: 50px;
+  display: inline-flex;
+  position: relative;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.btn .bg {
+  position: absolute;
+  background-image: linear-gradient(45deg, rgb(20, 222, 124) 0%, rgb(20, 222, 124) 21%, rgb(25, 190, 119) 21%, rgb(25, 190, 119) 37%, rgb(30, 158, 113) 37%, rgb(30, 158, 113) 46%, rgb(35, 126, 108) 46%, rgb(35, 126, 108) 53%, rgb(39, 94, 103) 53%, rgb(39, 94, 103) 59%, rgb(44, 62, 97) 59%, rgb(44, 62, 97) 77%, rgb(49, 30, 92) 77%, rgb(49, 30, 92) 100%);
+  top: 0;
+  left: 0;
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 2rem;
+  transition: width 400ms ease;
+}
+.btn:hover .bg {
+  width: 100%;
+}
+.btn span {
+  padding: 0.75rem 2rem;
+  padding-left: 4rem;
+  letter-spacing: -1px;
+  font-weight: 800;
+  transition: color 450ms ease;
+}
+.btn:hover span {
+  color: white;
+  z-index: 1;
+}
+.btn .arrow {
+  height: 2.75rem;
+  width: 2.75rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+.btn .arrow .body {
+  width: 0;
+  margin-left: 1.75rem;
+  border-top: 3px solid white;
+  transition: width 200ms ease;
+  opacity: 0;
+}
+.btn .arrow .tip {
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: 1rem;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(45deg);
+  transition: margin-left 150ms ease;
+}
+.btn:hover .body {
+  opacity: 1;
+  width: 2rem;
+}
+.btn:hover .tip {
+  margin-left: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
